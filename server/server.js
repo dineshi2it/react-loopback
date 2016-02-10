@@ -1,7 +1,14 @@
 var loopback = require('loopback');
 var boot = require('loopback-boot');
+var consolidate = require('consolidate');
+
+require('babel/register');
 
 var app = module.exports = loopback();
+
+app.engine('html', consolidate.handlebars);
+app.set('view engine', 'html');
+app.set('views', 'public/views');
 
 app.start = function() {
   // start the web server
