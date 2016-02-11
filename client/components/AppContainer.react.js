@@ -11,11 +11,10 @@ API.getUserList();
 var AppContainer = React.createClass({
   render: function () {
     return (
-      <div>
-	    <div className="container">
-      		<RouteHandler bootstrap={this.props.bootstrap} />
-        </div>
-      </div>
+    	<div>
+	    	<a href="/profile">Profile</a>
+	      	<RouteHandler bootstrap={this.props.bootstrap} />
+      	</div>
     );
   }
 });

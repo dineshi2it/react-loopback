@@ -35,7 +35,7 @@ function buildScript(file, watch) {
     return stream
       .on('error', handleErrors)
       .pipe(source('bundle.js'))
-      .pipe(gulp.dest('./public/'));
+      .pipe(gulp.dest('./public/assets'));
   }
 
   // listen for an update and run rebundle

@@ -9,6 +9,7 @@ var app = module.exports = loopback();
 app.engine('html', consolidate.handlebars);
 app.set('view engine', 'html');
 app.set('views', 'public/views');
+app.use(loopback.static('public/assets'));
 
 app.start = function() {
   // start the web server

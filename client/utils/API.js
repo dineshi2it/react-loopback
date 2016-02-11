@@ -30,7 +30,7 @@ var API = {
   },
 
   getCurrentUser: function() {
-    return document.cookie;
+    return "Rajesh";
   }
 
 };
