@@ -15,7 +15,7 @@
     "gulp": "^3.9.1",
     "history": "^1.17.0",
     "keymirror": "^0.1.1",
-    "loopback": "^2.22.0",
+    "loopback": "^3.16.2",
     "loopback-boot": "^2.6.5",
     "loopback-component-explorer": "^2.1.0",
     "loopback-connector-postgresql": "^2.4.0",
