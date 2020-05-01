@@ -4,7 +4,9 @@
   "main": "server/server.js",
   "scripts": {
     "start": "node .",
-    "pretest": "jshint ."
+    "pretest": "jshint .",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "dependencies": {
     "async": "^1.5.2",
@@ -26,7 +28,8 @@
     "reactify": "^1.1.1",
     "serve-favicon": "^2.0.1",
     "underscore": "^1.8.3",
-    "vinyl-source-stream": "^1.1.0"
+    "vinyl-source-stream": "^1.1.0",
+    "snyk": "^1.316.1"
   },
   "devDependencies": {
     "jshint": "^2.5.6"
@@ -35,5 +38,6 @@
     "type": "",
     "url": ""
   },
-  "description": "pipecandy"
+  "description": "pipecandy",
+  "snyk": true
 }
